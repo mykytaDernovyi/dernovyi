@@ -78,3 +78,22 @@ ul{
 li{
     margin-top: 12px;
 }
+.btn{
+    display: block;
+    width: 200px;
+    height: 50px;
+    border: 1px solid black ;
+    border-radius: 20px;
+    text-align: center;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
