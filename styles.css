@@ -16,7 +16,7 @@
 .menu ul li a {
     font-size: larger;
     color: black;
-    text-decoration:underline;
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .right-side {
-	width: calc(75% - 6px);
+    width: calc(75% - 6px);
     padding: 20px;
 }
 
@@ -59,30 +59,36 @@ h3 {
 
 }
 
-h2{
+h2 {
     border-bottom: 2px solid #9c9c9c;
     padding-bottom: 20px;
     margin-top: 20px;
     margin-right: 25px;
     margin-bottom: 20px;
 }
+
 .p1 {
     margin-top: 30px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     background-color: #f0f0f0;
     padding: 10px;
 }
-ul{
+
+ul {
     list-style: none;
 }
-li{
+ol {
+    margin-left: 15px;
+}
+li {
     margin-top: 12px;
 }
-.btn{
+
+.btn {
     display: block;
     width: 200px;
     height: 50px;
-    border: 1px solid black ;
+    border: 1px solid black;
     border-radius: 20px;
     text-align: center;
     -webkit-border-radius: 20px;
@@ -93,7 +99,14 @@ li{
     text-decoration: none;
     color: black;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: black;
     color: white;
+}
+address{
+    font-style: normal;
+}
+time{
+    font-style: italic;
 }
