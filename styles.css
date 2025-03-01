@@ -98,6 +98,7 @@ li {
     line-height: 50px;
     text-decoration: none;
     color: black;
+    margin: 15px;
 }
 
 .btn:hover {
