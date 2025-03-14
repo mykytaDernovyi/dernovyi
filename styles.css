@@ -15,8 +15,9 @@
 
 .menu ul li a {
     font-size: larger;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     font-weight: bold;
+    color: black;
 }
 
 .page-container {
@@ -112,5 +113,7 @@ time{
 }
 a.nodecoration {
     text-decoration: none;
-    color: black;
+}
+address ul a{
+    color: white;
 }
