@@ -111,6 +111,6 @@ address{
 time{
     font-style: italic;
 }
-.nodecoration a{
+a.nodecoration {
     text-decoration: none;
 }
