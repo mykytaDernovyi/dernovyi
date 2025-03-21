@@ -107,7 +107,7 @@ li {
 }
 
 .btn:active {
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 2px 5px black;
 }
 address{
     font-style: normal;
