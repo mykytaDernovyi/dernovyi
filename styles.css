@@ -85,7 +85,7 @@ li {
 }
 
 .btn {
-    display: block;
+    display: inline;
     width: 200px;
     height: 50px;
     border: 1px solid black;
