@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
+}
+
+.wrap {
+    height: 500px;
+    width: 1000px;
+    margin: 60px auto;
+    border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 5px;
+}
+
+.swipe {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 100px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 1px solid rgb(41, 28, 28);
+    cursor: pointer;
+}
+
+.swipe__left {
+    left: -20px;
+}
+
+.swipe__right {
+    right: -20px;
+}
+
+.product {
+    display: inline-block; 
+    text-align: center;
+    width: 246px;
+    height: 500px;
+    position: relative;
+    background: white;
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    vertical-align: top;
+}
+
+.product__category {
+    color: gray;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.product__circle {
+    position: absolute;
+    right: 5px;
+    top: -40px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 1px solid white;
+    line-height: 85px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product__new {
+    background-color: rgb(18, 146, 39);
+}
+
+.product__hit-sale {
+    background-color: rgb(0, 174, 255);
+    line-height: 30px;
+}
+
+img {
+    max-width: 200px;
+    height: 200px;
+    display: block;
+    margin: 30px auto;
+}
+
+.product__description {
+    color: rgb(0, 140, 255);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.product__price {
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+
+.product__price span {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(255, 217, 0);
+    border-radius: 5px;
+    transition: all 0.2s;
+    height: 50px;
+    line-height: 50px;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn__block {
+    background-color: rgb(138, 138, 138);
+    color: rgb(255, 255, 255);
+    pointer-events: none;
+    height: auto;
+    line-height: 1.8;
+}
