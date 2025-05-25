@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 2px solid #666;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.features {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.features-container img {
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.features-description {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.features-description p {
+    margin-bottom: 1rem;
+}
+
+.features-description ul {
+    margin-left: 1.5rem;
+}
+
+.features-description li {
+    margin-bottom: 0.5rem;
+}
+
+.features-description li:first-child {
+    font-weight: bold;
+}
+
+.content {
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.about-us, .contact {
+    flex: 1;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.about-us h2, .contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #666;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #666;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn:active{
+    transform: scale(0.85);
+}
+
+.btn:hover {
+    background-color: #999;
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .about-us, .contact {
+        margin-bottom: 1rem;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .features h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-us h2, .contact h2 {
+        font-size: 1.2rem;
+    }
+}
