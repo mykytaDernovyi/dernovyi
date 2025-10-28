@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            display: flex;
+            align-items: center;
+        }
+        .title::after,
+        .title::before{
+            content: "";
+            width: 75%;
+            height: 5px;
+            margin: 0 5px;
+            background-color: black;
+        }
+        h2{
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h2>TITLE</h2>
+    </div>
+</body>
+</html>
