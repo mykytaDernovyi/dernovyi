@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 5</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <h1>Лабораторна робота 5</h1>
+    <div class="task">
+        <h3>1. Температурний конвертер</h3>
+        <div class="converter-container">
+            <div>
+                <label>Температура за Фаренгейтом</label>
+                <input type="number" id="tempF">
+            </div>
+            <div>
+                <label>Температура за Цельсієм</label>
+                <input type="number" id="tempC">
+            </div>
+        </div>
+    </div>
+
+    <div class="task">
+        <h3>2. Тест на множення (Введення)</h3>
+        <p id="score2">Загальний рахунок 0% (0 правильних відповідей з 0)</p>
+        <div id="game2-area">
+            <h4 id="question2">Натисніть "Наступне завдання"</h4>
+            <input type="number" id="answer2" placeholder="Ваша відповідь">
+            <button id="btnCheck2">Перевірити</button>
+            <p id="result2"></p>
+        </div>
+        <button id="btnNext2">Наступне завдання</button>
+    </div>
+
+    <div class="task">
+        <h3>3. Тест на множення (Вибір варіанту)</h3>
+        <p id="score3">Загальний рахунок 0% (0 правильних відповідей з 0)</p>
+        <div id="game3-area">
+            <h4 id="question3">Натисніть "Наступне завдання"</h4>
+            <div id="answers3-container"></div>
+            <p id="result3"></p>
+        </div>
+        <button id="btnNext3">Наступне завдання</button>
+    </div>
+
+    <div class="task">
+        <h3>4. Фоторотатор</h3>
+        <div id="rotator"></div>
+    </div>
+
+    <div class="task">
+        <h3>5. Captcha</h3>
+        <div id="captcha-container">
+            <div id="captcha-display"></div>
+        </div>
+        <input type="text" id="captchaInput" placeholder="Введіть число">
+        <button onclick="checkCaptcha()">Перевірити</button>
+        <p id="captchaResult"></p>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 6</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CSS Генератор (Варіант 7)</h1>
+
+        <div id="tabs">
+            <div class="tab whiteborder">Border Radius</div>
+            <div class="tab">Float</div>
+            <div class="tab">Font Family</div>
+
+            <div class="tabContent show">
+                <h3>Налаштування кутів</h3>
+                <div class="controls">
+                    <div class="control-group">
+                        <label>Верхній лівий: <span id="val-tl">0</span>px</label>
+                        <input type="range" id="rtl" min="0" max="100" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label>Верхній правий: <span id="val-tr">0</span>px</label>
+                        <input type="range" id="rtr" min="0" max="100" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label>Нижній правий: <span id="val-br">0</span>px</label>
+                        <input type="range" id="rbr" min="0" max="100" value="0">
+                    </div>
+                    <div class="control-group">
+                        <label>Нижній лівий: <span id="val-bl">0</span>px</label>
+                        <input type="range" id="rbl" min="0" max="100" value="0">
+                    </div>
+                </div>
+
+                <div class="preview-area">
+                    <div id="block-radius"></div>
+                </div>
+
+                <div class="output-area">
+                    <p>CSS код:</p>
+                    <textarea id="code-radius" readonly></textarea>
+                </div>
+            </div>
+
+            <div class="tabContent hide">
+                <h3>Налаштування обтікання (float)</h3>
+                <div class="controls">
+                    <label><input type="radio" name="floatVal" value="none" checked> None (немає)</label>
+                    <label><input type="radio" name="floatVal" value="left"> Left (зліва)</label>
+                    <label><input type="radio" name="floatVal" value="right"> Right (справа)</label>
+                </div>
+
+                <div class="preview-area float-preview-container">
+                    <div id="block-float">Float Block</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Це текст, який демонструє, як працює
+                        обтікання елементів. Якщо вибрати left, блок буде зліва, а текст обтікатиме його справа.</p>
+                </div>
+
+                <div class="output-area">
+                    <p>CSS код:</p>
+                    <textarea id="code-float" readonly></textarea>
+                </div>
+            </div>
+
+            <div class="tabContent hide">
+                <h3>Налаштування шрифту (font-family)</h3>
+                <div class="controls">
+                    <label>Оберіть шрифт:</label>
+                    <select id="fontSelect">
+                        <option value="'Times New Roman', Times, serif">Times New Roman (Serif)</option>
+                        <option value="Arial, Helvetica, sans-serif">Arial (Sans-serif)</option>
+                        <option value="'Courier New', Courier, monospace">Courier New (Monospace)</option>
+                        <option value="Georgia, serif">Georgia (Serif)</option>
+                        <option value="'Trebuchet MS', sans-serif">Trebuchet MS (Sans-serif)</option>
+                        <option value="'Comic Sans MS', cursive">Comic Sans MS (Cursive)</option>
+                    </select>
+                </div>
+
+                <div class="preview-area">
+                    <p id="text-preview">
+                        Це приклад тексту для перевірки шрифту.<br>
+                        The quick brown fox jumps over the lazy dog.<br>
+                        1234567890
+                    </p>
+                </div>
+
+                <div class="output-area">
+                    <p>CSS код:</p>
+                    <textarea id="code-font" readonly></textarea>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
