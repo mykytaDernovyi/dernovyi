@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 7</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <h1>Лабораторна робота 7</h1>
+
+    <div class="task-block">
+        <h2>Завдання 4: Порівняння чисел</h2>
+        <p>Введіть два числа. Затримка перевірки - 1 секунда.</p>
+
+        <input type="number" id="num1" placeholder="Число 1">
+        <input type="number" id="num2" placeholder="Число 2">
+        <button id="btnTask4">Порівняти</button>
+
+        <div id="loader4" class="loader">Зачекайте, йде порівняння...</div>
+        <div id="result4" class="result"></div>
+    </div>
+
+    <div class="task-block">
+        <h2>Завдання 5: Promise.all</h2>
+        <p>Запустити 3 таймери (1с, 2с, 3с), отримати суму випадкових чисел.</p>
+
+        <button id="btnTask5">Запустити розрахунок</button>
+
+        <div id="loader5" class="loader">Виконується Promise.all (чекаємо 3 сек)...</div>
+        <div id="result5" class="result"></div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
