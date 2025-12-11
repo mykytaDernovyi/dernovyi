@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <title>Практична робота 4</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <h1>Практична робота 4</h1>
+
+        <div class="block">
+            <button id="watch">Watch me (Старт)</button>
+            <button id="clearWatch">Clear watch (Стоп)</button>
+        </div>
+
+        <div id="location" class="info">Тут будуть координати...</div>
+        <div id="distance" class="info">Тут буде відстань...</div>
+
+        <div class="block">
+            <h3>Перейти до координат:</h3>
+            <input type="number" id="destLat" placeholder="Lat (Широта)">
+            <input type="number" id="destLng" placeholder="Lng (Довгота)">
+            <button id="btnGoTo">Показати на карті</button>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
