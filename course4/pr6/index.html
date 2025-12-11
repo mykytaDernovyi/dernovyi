@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин смартфонів</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PhoneStore</div>
+        <div class="cart-icon-container" onclick="handleCartClick()">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-counter" class="badge">0</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="products-page">
+            <h2>Наші новинки</h2>
+            <div id="products-grid" class="products-grid">
+            </div>
+        </div>
+
+        <div id="cart-page" class="hidden">
+            <h2>Ваша корзина</h2>
+
+            <div id="cart-content">
+            </div>
+
+            <div class="cart-actions">
+                <button class="btn btn-secondary" onclick="showProducts()">Повернутись до покупок</button>
+                <button class="btn btn-success" onclick="alert('Дякуємо за покупку!')">Оплатити</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-qty" class="modal hidden">
+        <div class="modal-content">
+            <h3>Вкажіть кількість:</h3>
+            <input type="number" id="qty-input" value="1" min="1">
+            <div class="modal-buttons">
+                <button class="btn btn-primary" id="confirm-add-btn">Додати в корзину</button>
+                <button class="btn btn-danger" onclick="closeModals()">Скасувати</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-success" class="modal hidden">
+        <div class="modal-content">
+            <h3>Товар додано</h3>
+            <p>Що робимо далі?</p>
+            <div class="modal-buttons">
+                <button class="btn btn-success" onclick="showCart()">Перейти у корзину</button>
+                <button class="btn btn-secondary" onclick="showProducts()">Повернутись до покупок</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
